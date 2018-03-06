@@ -1,89 +1,140 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 
-<html>
-	<head>
-		<title>Sherry Li | CS Student</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
+<html lang="en">
 
-		<link rel="icon" type="image/png" href="logo.png">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sherry Li</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css' rel='stylesheet' type='text/css'>
+  </head>
 
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+  <body>
+    
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><div class="img"><img src="logo_white.png" alt="Sherry Li"></div></a> 
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">About</a></li>
+          <li><a href="Sherry Li_Resume.pdf">Resumé</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <!-- dropdown menu
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">WatMind</a></li>
+              <li><a href="#">Hangman</a></li>
+              <li><a href="#">Personal Site</a></li>
+            </ul>
+          </li>
+      -->
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+         </ul>
+        </div>
+      </div>
+      </nav>
 
-	<body>
+      <div class="jumbotron">
+       <div class="container">
+        <h1>Hello. I'm Sherry Li.</h1>
+        <p>Welcome to my personal site!</p>
+        <br>
+          <p>
+            <a class="btn btn-primary btn-lg" href="Sherry Li_Resume.pdf" role="button">Resumé</a>
+            <a class="btn btn-primary btn-lg" href="#projects" role="button">Projects</a></p>
+            <p>
+              <a href="mailto:sh7li@edu.uwaterloo.ca"><i class="fa fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/sherryhanxiaoli/"><i class="fa fa-linkedin-square"></i></a>
+              <a href="https://github.com/sherryhli"><i class="fa fa-github"></i></a>
+        </p>
+        </div>
+      </div>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+      <div class="container">
+        <div class="row">
+        	<article id="about">
+          <div class="col-md-6">
+            <img class="img-responsive center-block img-circle" src="headshot.jpg"></div> 
+            <div class="col-md-6">
+              
+              <h1>About Me</h1>
+              <p>I'm a first-year computer science student at the University of Waterloo, passionate about using technology to enhance scientific research and to tackle pressing concerns of the world. I always enjoy learning new things and applying what I know to solving inter-disciplinary problems.</p>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="logo"></div>
-						<div class="content">
-							<div class="inner">
-								<h1>Hello, I'm Sherry Li</h1>
-								<p>Welcome to my personal site.</p>
-							</div>
-						</div>
-						<nav>
-							<ul>
-								<li><a href="#about">About</a></li>
-								<li><a href="resume.pdf">Resumé</a></li>
-								<li><a href="#projects">Projects</a></li>
-							</ul>
-						</nav>
-					</header>
+                <p>On the side, I'm a quiz bowl enthusiast and a history nerd. My spare time is also dedicated to surfing through Wikipedia, catching up on current events, and enjoying classical music.</p>
+            </div>
+            </article>
+        </div>
+        <article id="projects">
+          <h1 style="text-align: center">My Projects</h1>
+        <div class="row">
+          <div class="col-md-4">
+            <h3>WatMind</h3>
+            <a href="https://devpost.com/software/watmind"><img class="img-responsive center-block project-logo img-rounded" src="watmind_2.png"></a>
+            <br>
+            <p class="project-text">An Android app that provides mental health tips, as well as discussion and counselling services to Waterloo students. Created in 33 hours at Hack the North. Check it out on <a href="https://devpost.com/software/watmind">Devpost</a> or <a href="https://github.com/sherryhli/WatMind">GitHub</a>.</p>
+          </div>
+          <div class="col-md-4">
+            <h3>Hangman</h3>
+            <a href="https://github.com/sherryhli/Hangman"><img class="img-responsive center-block project-logo img-rounded" src="Hangman.png"></a>
+            <br>
+            <p class="project-text">An iteration of the classic pen-and-paper word game with literature titles and authors, built with Java. GUI currently in the working. Take a look on my <a href="https://github.com/sherryhli/Hangman">GitHub</a>.</p>
+          </div>
+          <div class="col-md-4">
+            <h3>Personal Website</h3>
+            <a href="https://github.com/sherryhli/sherryhli.github.io"><img class="img-responsive center-block project-logo img-rounded" src="website.png"></a>
+            <br>
+            <p class="project-text">A fully responsive online portfolio of my projects and writings created with HTML, CSS, and Bootstrap. The code can be found on my <a href="https://github.com/sherryhli/sherryhli.github.io">GitHub</a>.</p>
+          </div>
+        </div>
+        </article>
+        <div class="blog">
+        	<article id="blog">
+        		<h1>Blog</h1>
+        		<p>I've never tried my hand at blogging before, but I'd like to make a point of using this space to share my thoughts or interesting tidbits I learned. Expect some descriptions of programming projects, 'today-I-learned's, and reflections on readings or past experiences.</p>
+        		<a href="blog.html"><p>Coming soon...</p></a>
+        	</article>
+    	</div>
+        <div class="contact-text">
+        <article id="contact">
+          <h1>Contact Me</h1>
+          <p>Questions? Comments? Feel free to reach out to me!</p>
+          <p>
+            <i class="fa fa-envelope"></i><a href="mailto:sh7li@edu.uwaterloo.ca"> sh7li@.edu.uwaterloo.ca</a>
+            <br>
+            <i class="fa fa-linkedin-square"></i><a href="https://www.linkedin.com/in/sherryhanxiaoli/"> linkedin.com/in/sherryhanxiaoli</a>
+            <br>
+            <i class="fa fa-phone"></i> (416)-629-9630
+            <br>
+            <i class="fa fa-map-marker"></i> Waterloo, ON
+           </p>
+        </article></div>
+      </div>
+      <footer id="footer">
+      	<hr>
+      	<p>
+              <a href="mailto:sh7li@edu.uwaterloo.ca"><i class="fa fa-envelope"></i></a>
+              <a href="https://www.linkedin.com/in/sherryhanxiaoli/"><i class="fa fa-linkedin-square"></i></a>
+              <a href="https://github.com/sherryhli"><i class="fa fa-github"></i></a>
+        </p>
+        <p>&copy; Sherry Li, 2018</p>
+      </footer>
 
-				<!-- Main -->
-					<div id="main">
 
-						<!-- About -->
-							<article id="about">
-								<h2 class="major">About</h2>
-								
-								<p><img src="download.png" height="320" width="240" alt="" style="float: left; margin: 5px 15px 10px 0px;"/> 
-								I'm an undergraduate computer science student at the University of Waterloo, passionate about using technology to enhance scientific research and to tackle pressing concerns of the world. I always enjoy learning new things and applying what I know to solving inter-disciplinary problems.</p>
-
-								<p>On the side, I'm a quiz bowl enthusiast and a history nerd. My spare time is also dedicated to surfing through Wikipedia, catching up on current events, and enjoying classical music.</p>
-							</article>
-
-
-						<!-- Projects -->
-							<article id="projects">
-								<h2 class="major">Projects</h2>
-								<p><a href="https://devpost.com/software/watmind"><img src="watmind.png" class="projects"></a> An app built with Android Studio that provides mental health tips, as well as discussion and counselling services to Waterloo students. Created in 33 hours at Hack the North 2017. Check it out on <a href="https://devpost.com/software/watmind">Devpost</a> or <a href="https://github.com/sherryhli/WatMind">GitHub</a>.</p>
-								<p style="padding-top: 10px;"><a href="https://github.com/sherryhli/Hangman"><img src="Hangman.png" class="projects"></a>An iteration of the classic pen-and-paper word game with book/play titles and authors, built with Java. Take a look on my <a href="https://github.com/sherryhli/Hangman">GitHub</a>.</p>
-							</article> 
-
-
-					</div>
-
-				<!-- Footer -->
-					<footer id="footer">
-						<ul class="icons">
-									<li><a href="https://www.linkedin.com/in/sherryhanxiaoli/" class="icon fa-linkedin">
-										<span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/sherryhli" class="icon fa-github">
-										<span class="label">GitHub</span></a></li>
-									<li><a href="mailto:sh7li@edu.uwaterloo.ca" class="icon fa-envelope">
-										<span class="label">Email</span></a></li>
-						</ul>
-
-						<font size="1.5">Design adapted from HTML5 UP.</font>
-
-					</footer>
-
-			</div>
-
-		<!-- BG -->
-			<div id="bg"></div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
