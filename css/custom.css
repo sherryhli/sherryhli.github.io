@@ -160,8 +160,28 @@ hr {
 
 .blog-post p {
 	text-align: left;
+	font-size: 16px;
 }
 
 .blog-post h3 {
 	font-weight: bold;
+}
+
+.blog-post hr {
+	border-width: 1px;
+	border-color: #C3C3C3;
+}
+
+.blog-post .inner hr {
+	border-top: 5px dotted;
+	border-color: #C3C3C3; 
+	width: 5%
+}	
+
+.blog-post ul {
+	font-size: 16px;
+}
+
+.blog-date-stamp {
+	font-size: 13px !important;
 }
